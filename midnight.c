@@ -9,7 +9,7 @@
 
 #define YELLOW             (ALT(RGB_32_hex(ffc24b), 214))
 
-#define YELLOW2             (ALT(RGB_32_hex(ffcc00), 220))
+#define YELLOW2            (ALT(RGB_32_hex(ffcc00), 220))
 
 #define GREEN              (ALT(RGB_32_hex(b4ce5c), 119))
 
@@ -18,6 +18,8 @@
 #define BLUE               (ALT(RGB_32_hex(32b4ff), 33))
 
 #define RED                (ALT(RGB_32_hex(ff3c41), 160))
+
+#define CRIMSONRED         (ALT(RGB_32_hex(ff3c41), 160))
 
 #define TEAL               (ALT(RGB_32_hex(23d4ac), 37))
 
@@ -75,8 +77,8 @@ PACKABLE_STYLE(midnight)
     s.search.bg           = BLUE;
 
     s.search_cursor.flags = attr_kind | ATTR_BOLD;
-    s.search_cursor.fg    = DARK;
-    s.search_cursor.bg    = WHITE;
+    s.search_cursor.fg    = WHITE;
+    s.search_cursor.bg    = CRIMSONRED;
 
     s.selection.flags     = attr_kind;
     s.selection.fg        = WHITE;
